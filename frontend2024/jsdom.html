@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p{
+			font-size: 32px;
+			font-family: sans-serif;
+			list-style: 1.5;
+			color: gold;
+		}
+	</style>
+</head>
+<body>
+	<!-- <p id="text1">Можно сделать в начале грамотнее. Быстро качаешь фокусы на подчинение военачальников и антикоммунизм и до 37 года захватываешь всех не подчинившихся. У тебя будет промка и обычно больше 100 опыта армии что даст тебе возможность взять первую волну реформ еще до начала войны с Японией.</p> -->
+
+<!-- 	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<span class="box"></span>
+	<span class="box"></span>
+	<span class="box"></span>
+	<span class="box"></span>
+	<span class="box"></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+ -->
+<div id="box1">
+	<p id="text1">Я --- первый</p>
+	<p id="text2">Я --- второй</p>
+	<p id="text3">Я --- третий</p>
+	<p id="text4">Я --- четвертый</p>
+</div>
+
+	<script type="text/javascript">
+
+		// let text1 = document.getElementById("text1");
+		// const attr = "class";
+		// console.log(text1.hasAttribute("id"))
+		// console.log(text1.hasAttribute("class"))
+		// if (text1.hasAttribute("id")) {
+		// 	console.log(text1.getAttribute(attr));
+		// } else {
+		// 	console.log(`нет атрибута ${arrt}`)
+		// }
+
+		// let text1 = document.getElementById("text1");
+		// let pStyle = getComputedStyle(text1);
+		// console.log(pStyle.color);
+
+		// let text2 = document.getElementById("text2");
+
+		// if (getComputedStyle(text2).color !== "rgb(0, 0, 255)") {
+		// 	text2.style.color = "rgb(0, 0, 255)";
+		// } else {
+		// 	text2.style.color = "rgb(0, 255, 0)";
+		// }
+
+		// let p = document.getElementById("text1");
+		// p.textContent = "Новый текст";
+		// p.style.cssText = "color: dodgerblue; \
+		//                    font-size: 50px; \
+		//                    text-align: center;\
+		//                    ";
+
+		// let box1 = document.getElementById("box1");
+		// box1.innerHTML = "<p id='new_text'>Это новый параграф</p>"
+
+
+		// let p = document.createElement("p");
+		// let beforeP = document.getElementById("text1");
+		// p.append("Дабавиленный текст с помощью append");
+		// p.id = "before";
+		// p.style.color = "red";
+		// beforeP.before(p);
+		// beforeP.after(p);
+		// let div = document.getElementById("box1");
+		// div.append(p);
+		// div.prepend(p);
+		// beforeP.replaceWith(p);
+
+
+		// let paragraphCollecthin = [];
+		// let divBox1 = document.getElementById("box1");
+		// for (let i = 0; i < 5; i++) {
+		// 	paragraphCollecthin.push(document.createElement("p"));
+        //     paragraphCollecthin[i].textContent = "Параграф под номером " + (i + 1);
+        //     paragraphCollecthin[i].id = "p" + (i + 1);
+		// }
+		//     divBox1.prepend(...paragraphCollecthin);
+
+
+
+
+		// let cloned = document.getElementById("box1").cloneNode(true);
+		// cloned.id = "box2";
+		// document.body.insertBefore(cloned, document.getElementById("box1"));
+
+
+
+		// let firstP = document.getElementById("text1");
+		// console.log(firstP);
+		// let removed = document.body.removeChild(firstP);
+		// console.log(remove);
+		// let paragraphs = document.getElementsByTagName("p");
+		// console.log(paragraphs);
+		// while (paragraphs.length > 0) {
+		// 	document.body.removeChild(paragraphs[0]);
+		// }
+
+
+
+
+
+
+		// let paragraph = document.getElementById("text1");
+		// console.log(paragraph);
+		// paragraph.style.color = "dodgeblue";
+		// paragraph.style.backgroundColor = "ffbbbb";
+		// paragraph.style.fontSize = "50px";
+
+		// const changeStyle = (elem) => {
+		// 	const colors = ["black", "green", "blue", "fachsia", "pink", "silver", "gold"];
+		// 	elem.style.height = "100px";
+		// 	elem.style.width = "100px";
+		// 	elem.style.backgroundColor = "#" + (0x1000000 + (Math.random() * 0xffffff)).toString(16).substr(1,6);
+		// 	elem.style.margin = "10px";
+		// 	elem.style.display = "inline-block"
+		// };
+
+		// let divs = document.getElementsByClassName("box");
+		// for (let i = 0; i < divs.length; i++) {
+		// 	changeStyle(divs[i]);
+		// 	console.log(divs[i]);
+		// };
+
+		// let divsWithBox = document.querySelectorAll("div");
+		// console.log(divsWithBox);
+		// for (let i = 0; i < divsWithBox.length; i++) {
+		// 	divsWithBox[i].style.height = "50px";
+		// 	divsWithBox[i].style.width = "50px";
+		// };
+
+		// let onlySpans = document.getElementsByTagName("span");
+		// console.log(onlySpans);
+		// for (let i = 0; i < onlySpans.length; i++) {
+		// 	onlySpans[i].style.height = "30px";
+		// 	onlySpans[i].style.width = "30px";
+		// 	onlySpans[i].style.margin = "10px";
+		// 	onlySpans[i].style.display = "inline-block";
+		// 	onlySpans[i].style.backgroundColor = "deeppink";
+		// };
+
+		// let newDiv = document.createElement("div");
+		// newDiv.className = "new";
+		// newDiv.style.height = "100px";
+		// newDiv.style.backgroundColor = "red";
+		// document.body.insertBefore(newDiv, paragraph);
+		
+		// let boxes = document.getElementsByClassName("box");
+		// const boxesNumber = boxes.length;
+		// for (let i = 0; i < boxesNumber; i++) {
+		// 	boxes[i].style.display = "block";
+		// 	boxes[i].style.height = "50px";
+		// 	boxes[i].style.backgroundColor = "dodgerblue"
+		// 	let het = document.createElement("div");
+		// 	het.className = "iq";
+		// 	het.style.height = "100px";
+		// 	het.style.backgroundColor = "#" + (0x1000000 + (Math.random() * 0xffffff)).
+		// 	toString(16).substr(1,6);
+		// 	document.body.insertBefore(het, boxes[i]);
+		// };
+
+		// let paragraph1 = document.getElementById("text1")
+		// paragraph1.textContent = "Какой-то новый текст"
+
+		// for (let i = 0; i < 10; i++) {
+		// 	const color = "#" + (0x1000000 + (Math.random() * 0xffffff)).
+		// 	toString(16).substr(1,6);
+		// 	let newParagraph = document.createElement("p");
+		// 	newParagraph.style.color = color;
+		// 	newParagraph.textContent = "Мой цвет: " + color;
+		// 	document.body.insertBefore(newParagraph, paragraph1);
+		// };
+
+
+		// for (let i = 0; i < 10; i++) {
+		// 	const sColor = "#" + (0x1000000 + (Math.random() * 0xffffff)).
+		// 	toString(16).substr(1,6);
+		// 	let newSpan = document.createElement("span");
+		// 	newSpan.style.backgroundColor = sColor;
+		// 	newSpan.textContent = sColor;
+		// 	document.body.insertBefore(newSpan, text1)
+		// };
+
+		// 		for (let i = 0; i < 10; i++) {
+		// 	const dColor = "#" + (0x1000000 + (Math.random() * 0xffffff)).
+		// 	toString(16).substr(1,6);
+		// 	let newDiv = document.createElement("div");
+		// 	newDiv.style.backgroundColor = dColor;
+		// 	newDiv.style.width = "50px";
+		// 	newDiv.style.height = "50px";
+		// 	document.body.insertBefore(newDiv, text1)
+		// };
+
+
+		let websitesLinks = [
+		{websiteName: "Youtube", websiteLink: "https://m.youtube.com/?hl=ru"},
+		{websiteName: "Family Gum", wedsiteLink: "http://griffiny.ru/page/44/"},
+		{websiteName: "Кинопоиск", wedsiteLink: "https://www.kinopoisk.ru/"},
+		{websiteName: "ChatGPT", wedsiteLink: "https://openai.com/chatgpt/"},
+		{websiteName: "Telegram Web", wedsiteLink: "https://web.telegram.org/"},
+		];
+		let trex = [];
+		for (let i = 0; i < websitesLinks.length; i++) {
+			let a = document.createElement("a");
+			a.textContent = websitesLinks[i].websiteName;
+			a.setAttribute("href", websitesLinks[i].wedsiteLink);
+			let p = document.createElement("p"); 
+			p.append(a);
+			trex.push(p);
+		};
+		console.log(trex);
+		document.body.prepend(...trex);
+
+
+	</script>
+</body>
+</html>
